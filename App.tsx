@@ -1,18 +1,50 @@
 import { StyleSheet, Text, View } from 'react-native';
+import {
+  ContextMenuProvider,
+  ContextMenuContainer,
+} from '@brnho/react-native-context-menu';
 
 function App() {
   return (
-    <View style={styles.container}>
-      <View style={styles.card}>
-        <Text>Lorem ipsum dolor sit amet</Text>
-        <Text>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo.
-        </Text>
+    <ContextMenuProvider>
+      <View style={styles.container}>
+        <ContextMenuContainer
+          menuItems={[
+            { text: 'Action', isTitle: true },
+            {
+              text: 'Edit',
+              icon: {
+                type: 'Feather',
+                name: 'edit',
+                size: 18,
+              },
+              onPress: () => {},
+            },
+            {
+              text: 'Delete',
+              icon: {
+                type: 'Feather',
+                name: 'trash',
+                size: 18,
+              },
+              withSeparator: true,
+              isDestructive: true,
+              onPress: () => {},
+            },
+          ]}
+        >
+          <View style={styles.card}>
+            <Text>Lorem ipsum dolor sit amet</Text>
+            <Text>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo.
+            </Text>
+          </View>
+        </ContextMenuContainer>
       </View>
-    </View>
+    </ContextMenuProvider>
   );
 }
 
