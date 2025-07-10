@@ -1,0 +1,18 @@
+diff --git a/package.json b/package.json
+index 60fc95c18470f83524869f5c625dfb7b9eb2f79d..b24a3a93d6ac7e73cb940cb43b6168082f497d64 100644
+--- a/package.json
++++ b/package.json
+@@ -110,7 +110,12 @@
+   "codegenConfig": {
+     "name": "RNMenuViewSpec",
+     "type": "components",
+-    "jsSrcsDir": "src"
++    "jsSrcsDir": "src",
++    "ios": {
++      "componentProvider": {
++        "MenuView": "MenuView"
++      }
++    }
+   },
+   "packageManager": "yarn@4.1.1"
+ }

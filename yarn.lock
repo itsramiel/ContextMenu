@@ -2134,6 +2134,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-menu/menu@patch:@react-native-menu/menu@npm%3A1.2.3#~/.yarn/patches/@react-native-menu-menu-npm-1.2.3-182506938b.patch":
+  version: 1.2.3
+  resolution: "@react-native-menu/menu@patch:@react-native-menu/menu@npm%3A1.2.3#~/.yarn/patches/@react-native-menu-menu-npm-1.2.3-182506938b.patch::version=1.2.3&hash=a9d1fe"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/fed638185ff276548dc56ad68b6b7da339f25f9051931712eb063b96a573227dcc261bb69d29b344adc70893b32b58d33e6e6ef25b9caeac366b063865cb9c78
+  languageName: node
+  linkType: hard
+
 "@react-native/assets-registry@npm:0.80.1":
   version: 0.80.1
   resolution: "@react-native/assets-registry@npm:0.80.1"
@@ -2794,7 +2804,7 @@ __metadata:
     "@react-native-community/cli": "npm:19.0.0"
     "@react-native-community/cli-platform-android": "npm:19.0.0"
     "@react-native-community/cli-platform-ios": "npm:19.0.0"
-    "@react-native-menu/menu": "npm:1.2.3"
+    "@react-native-menu/menu": "patch:@react-native-menu/menu@npm%3A1.2.3#~/.yarn/patches/@react-native-menu-menu-npm-1.2.3-182506938b.patch"
     "@react-native/babel-preset": "npm:0.80.1"
     "@react-native/eslint-config": "npm:0.80.1"
     "@react-native/metro-config": "npm:0.80.1"
