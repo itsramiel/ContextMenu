@@ -1,17 +1,29 @@
 import { StyleSheet, Text, View } from 'react-native';
+import { PortalHost } from '@rn-primitives/portal';
+import * as ContextMenuPrimitive from '@rn-primitives/context-menu';
 
 function App() {
   return (
     <View style={styles.container}>
-      <View style={styles.card}>
-        <Text>Lorem ipsum dolor sit amet</Text>
-        <Text>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-          ab illo inventore veritatis et quasi architecto beatae vitae dicta
-          sunt explicabo.
-        </Text>
-      </View>
+      <ContextMenuPrimitive.Root>
+        <ContextMenuPrimitive.Trigger>
+          <View style={styles.card}>
+            <Text>Lorem ipsum dolor sit amet</Text>
+            <Text>
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo.
+            </Text>
+          </View>
+        </ContextMenuPrimitive.Trigger>
+        <ContextMenuPrimitive.Content>
+          <ContextMenuPrimitive.Item>
+            <Text>Back</Text>
+          </ContextMenuPrimitive.Item>
+        </ContextMenuPrimitive.Content>
+      </ContextMenuPrimitive.Root>
+      <PortalHost />
     </View>
   );
 }
