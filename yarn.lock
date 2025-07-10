@@ -2797,6 +2797,7 @@ __metadata:
     prettier: "npm:2.8.8"
     react: "npm:19.1.0"
     react-native: "npm:0.80.1"
+    react-native-context-menu-view: "npm:^1.19.0"
     react-test-renderer: "npm:19.1.0"
     typescript: "npm:5.0.4"
   languageName: unknown
@@ -7603,6 +7604,16 @@ __metadata:
   version: 19.1.0
   resolution: "react-is@npm:19.1.0"
   checksum: 10c0/b6c6cadd172d5d39f66d493700d137a5545c294a62ce0f8ec793d59794c97d2bed6bad227626f16bd0e90004ed7fdc8ed662a004e6edcf5d2b7ecb6e3040ea6b
+  languageName: node
+  linkType: hard
+
+"react-native-context-menu-view@npm:^1.19.0":
+  version: 1.19.0
+  resolution: "react-native-context-menu-view@npm:1.19.0"
+  peerDependencies:
+    react: ^16.8.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    react-native: ">=0.60.0-rc.0 <1.0.x"
+  checksum: 10c0/bc43cef8674474b39ea19f21fe8d8292f5ccfa5c19ecc1750a197b601c5c42bb2993c0831c8c00c0ec2013870e114093a898e4c31ed1d8d70f13725eb9642dd7
   languageName: node
   linkType: hard
 
