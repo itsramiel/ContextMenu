@@ -1452,6 +1452,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dominicstop/ts-event-emitter@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@dominicstop/ts-event-emitter@npm:1.1.0"
+  checksum: 10c0/fe16c03132736a0a798c232636ab6b127fd8063509511ccafbd99405c224a106cfb7a8d4af13c4f6f412ec0ea3baae3678aa2c8c09d81c9985c423d476404e1a
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.0":
   version: 4.7.0
   resolution: "@eslint-community/eslint-utils@npm:4.7.0"
@@ -2797,6 +2804,8 @@ __metadata:
     prettier: "npm:2.8.8"
     react: "npm:19.1.0"
     react-native: "npm:0.80.1"
+    react-native-ios-context-menu: "npm:3.1.2"
+    react-native-ios-utilities: "npm:5.1.5"
     react-test-renderer: "npm:19.1.0"
     typescript: "npm:5.0.4"
   languageName: unknown
@@ -7603,6 +7612,29 @@ __metadata:
   version: 19.1.0
   resolution: "react-is@npm:19.1.0"
   checksum: 10c0/b6c6cadd172d5d39f66d493700d137a5545c294a62ce0f8ec793d59794c97d2bed6bad227626f16bd0e90004ed7fdc8ed662a004e6edcf5d2b7ecb6e3040ea6b
+  languageName: node
+  linkType: hard
+
+"react-native-ios-context-menu@npm:3.1.2":
+  version: 3.1.2
+  resolution: "react-native-ios-context-menu@npm:3.1.2"
+  dependencies:
+    "@dominicstop/ts-event-emitter": "npm:^1.1.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+    react-native-ios-utilities: "*"
+  checksum: 10c0/84f34293fbb6c36131ab739fca72a9101d8fd558409ce0feef74217f2048801a0487aaa8699777e80eb4291946d9ad9d150a7c137f32e05350e0561c495103cc
+  languageName: node
+  linkType: hard
+
+"react-native-ios-utilities@npm:5.1.5":
+  version: 5.1.5
+  resolution: "react-native-ios-utilities@npm:5.1.5"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 10c0/775bad758b88a656d5ba9172e084d06ca627754d325dcbc50a0fbfc24d548ed70f98256bee285e5c5ac54333828a03df5e2a0622f6f03f03a258d7d5e0ee6e17
   languageName: node
   linkType: hard
 
